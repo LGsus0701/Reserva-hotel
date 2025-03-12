@@ -1,3 +1,52 @@
+🏨 Reserva de Hoteles
+
+📌 Descripción
+
+Este es un sistema de Reserva de Hoteles desarrollado con Laravel y PHP, 
+que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera eficiente.
+
+👥 Integrantes
+Jeyvin (Agrega más integrantes si trabajas en equipo)
+🎯 Alcance del Proyecto
+
+✅ Registro e inicio de sesión de usuarios (clientes y administradores).
+
+✅ Gestión de hoteles, habitaciones y disponibilidad.
+
+✅ Sistema de reservas con calendario interactivo.
+
+✅ Generación de reportes de reservas y ocupación.
+
+✅ Notificaciones de confirmación de reserva por correo.
+
+
+🚀 Tecnologías Utilizadas
+
+Framework: Laravel 10
+
+Lenguaje: PHP 8
+
+Base de datos: PostgreSql
+
+Frontend: Blade, Tailwind CSS 
+
+Herramientas: Git, GitHub, Visual Studio Code Sistema de reserva de Hoteles
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
