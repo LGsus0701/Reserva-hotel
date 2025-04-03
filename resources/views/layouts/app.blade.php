@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         }
     </script>
 </head>
+
 <body class="bg-gray-100">
     <div class="flex h-screen">
         <!-- Sidebar -->
@@ -29,7 +31,7 @@
                         <i class="fas fa-bed"></i> Habitaciones
                     </li>
                     <ul id="menuHabitaciones" class="hidden pl-6 space-y-2">
-                        <li class="hover:text-blue-300 cursor-pointer">Lista de habitaciones</li>
+                        <a href="{{ route('habitaciones') }}" class="hover:text-blue-300 cursor-pointer">Lista de habitaciones</a>
                         <li class="hover:text-blue-300 cursor-pointer">Disponibles</li>
                         <li class="hover:text-blue-300 cursor-pointer">Reservadas</li>
                     </ul>
@@ -61,4 +63,5 @@
         </main>
     </div>
 </body>
+
 </html>
