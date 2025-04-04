@@ -18,7 +18,7 @@
     <div class="flex h-screen">
         <!-- Sidebar -->
         <aside class="w-64 bg-blue-900 text-white p-5">
-            <h2 class="text-xl font-bold mb-6">Hotel El Cielo 4</h2>
+            <h2 class="text-xl font-bold mb-6">Marriot JW</h2>
             <nav>
                 <ul class="space-y-4">
                     <!-- Inicio -->
@@ -58,6 +58,43 @@
                         <li class="hover:text-blue-300 cursor-pointer">Lista de Clientes</li>
                         <li class="hover:text-blue-300 cursor-pointer">Añadir Cliente</li>
                     </ul>
+
+                    <!-- Pagos -->
+                    <li onclick="toggleMenu('menuPagos')" class="cursor-pointer flex items-center gap-2 hover:text-blue-300">
+                        <i class="fas fa-money-check-alt"></i> Pagos
+                    </li>
+                    <ul id="menuPagos" class="hidden pl-6 space-y-2">
+                        <li class="hover:text-blue-300 cursor-pointer">Registrar Pago</li>
+                        <li class="hover:text-blue-300 cursor-pointer">Historial de Pagos</li>
+                    </ul>
+
+                    <!-- Usuarios -->
+                    <li onclick="toggleMenu('menuUsuarios')" class="cursor-pointer flex items-center gap-2 hover:text-blue-300">
+                        <i class="fas fa-user-circle"></i> Usuarios
+                    </li>
+                    <ul id="menuUsuarios" class="hidden pl-6 space-y-2">
+                        <li class="hover:text-blue-300 cursor-pointer">Lista de Usuarios</li>
+                        <li class="hover:text-blue-300 cursor-pointer">Agregar Usuario</li>
+                    </ul>
+
+                    <!-- Empleados -->
+                    <li onclick="toggleMenu('menuEmpleados')" class="cursor-pointer flex items-center gap-2 hover:text-blue-300">
+                        <i class="fas fa-id-badge"></i> Empleados
+                    </li>
+                    <ul id="menuEmpleados" class="hidden pl-6 space-y-2">
+                        <li class="hover:text-blue-300 cursor-pointer">Lista de Empleados</li>
+                        <li class="hover:text-blue-300 cursor-pointer">Agregar Empleado</li>
+                    </ul>
+
+                    <!-- Servicios -->
+                    <li onclick="toggleMenu('menuServicios')" class="cursor-pointer flex items-center gap-2 hover:text-blue-300">
+                        <i class="fas fa-concierge-bell"></i> Servicios
+                    </li>
+                    <ul id="menuServicios" class="hidden pl-6 space-y-2">
+                        <li class="hover:text-blue-300 cursor-pointer">Servicios Disponibles</li>
+                        <li class="hover:text-blue-300 cursor-pointer">Agregar Servicio</li>
+                    </ul>
+
                 </ul>
             </nav>
         </aside>
