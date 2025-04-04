@@ -31,7 +31,7 @@
                         <i class="fas fa-bed"></i> Habitaciones
                     </li>
                     <ul id="menuHabitaciones" class="hidden pl-6 space-y-2">
-                        <a href="{{ route('habitaciones') }}" class="hover:text-blue-300 cursor-pointer">Lista de habitaciones</a>
+                        <a href="{{ route('habitaciones.index') }}" class="hover:text-blue-300 cursor-pointer">Lista de habitaciones</a>
                         <li class="hover:text-blue-300 cursor-pointer">Disponibles</li>
                         <li class="hover:text-blue-300 cursor-pointer">Reservadas</li>
                     </ul>
