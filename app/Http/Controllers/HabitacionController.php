@@ -64,5 +64,36 @@ class HabitacionController extends Controller
 
         return redirect()->route('habitaciones.index')->with('success', 'Habitación eliminada exitosamente');
     }
+
+    public function ocupadas()
+    {
+        // Obtener solo habitaciones ocupadas
+        $habitaciones = Habitacion::where('estado', 'Ocupada')->with('tipoHabitacion')->get();
+
+        return view('habitaciones.ocupadas', compact('habitaciones'));
+    }
+
+    // Habitaciones disponibles
+    public function disponibles()
+    {
+        $habitaciones = Habitacion::where('estado', 'Disponible')->with('tipoHabitacion')->get();
+        return view('habitaciones.disponibles', compact('habitaciones'));
+    }
     
+
+    // Habitaciones en mantenimiento
+    public function mantenimiento()
+    {
+        $habitaciones = Habitacion::where('estado', 'Mantenimiento')->get();
+        return view('habitaciones.mantenimiento', compact('habitaciones'));
+    }
+
+
+    // Habitaciones reservadas
+    public function reservadas()
+    {
+        $habitaciones = Habitacion::where('estado', 'Reservada')->get();
+        return view('habitaciones.reservadas', compact('habitaciones'));
+    }
+
 }

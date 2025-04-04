@@ -17,6 +17,7 @@
                 <th class="border border-gray-300 px-4 py-2">Número</th>
                 <th class="border border-gray-300 px-4 py-2">Tipo</th>
                 <th class="border border-gray-300 px-4 py-2">Descripción</th>
+                <th class="border border-gray-300 px-4 py-2">Precio</th>
                 <th class="border border-gray-300 px-4 py-2">Estado</th>
                 <th class="border border-gray-300 px-4 py-2">Acciones</th>
             </tr>
@@ -28,6 +29,9 @@
                     <td class="border border-gray-300 px-4 py-2">{{ $habitacion->numero_habitacion }}</td>
                     <td class="border border-gray-300 px-4 py-2">{{ $habitacion->tipoHabitacion->nombre ?? 'No definido' }}</td>
                     <td class="border border-gray-300 px-4 py-2">{{ $habitacion->descripcion }}</td>
+                    <td class="border border-gray-300 px-4 py-2">
+                        S/{{ number_format($habitacion->tipoHabitacion->precio ?? 0, 2) }}
+                    </td>
                     <td class="border border-gray-300 px-4 py-2">{{ $habitacion->estado }}</td>
                     <td class="border border-gray-300 px-4 py-2">
                         <!-- Botón para editar -->

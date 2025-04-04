@@ -37,6 +37,7 @@
                 <option value="Disponible" {{ $habitacion->estado == 'Disponible' ? 'selected' : '' }}>Disponible</option>
                 <option value="Ocupada" {{ $habitacion->estado == 'Ocupada' ? 'selected' : '' }}>Ocupada</option>
                 <option value="Mantenimiento" {{ $habitacion->estado == 'Mantenimiento' ? 'selected' : '' }}>Mantenimiento</option>
+                <option value="Reservada" {{ $habitacion->estado == 'Reservada' ? 'selected' : '' }}>Reservada</option>
             </select>
         </div>
 

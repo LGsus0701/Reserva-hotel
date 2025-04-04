@@ -23,7 +23,7 @@
                 <ul class="space-y-4">
                     <!-- Inicio -->
                     <li class="flex items-center gap-2 hover:text-blue-300 cursor-pointer">
-                        <i class="fas fa-home"></i> 
+                        <i class="fas fa-home"></i>
                         <a href="{{ route('dashboard') }}" onclick="redirectToHomeAndCloseMenu()">Inicio</a> <!-- Redirige al inicio y cierra los submenús -->
                     </li>
 
@@ -32,10 +32,14 @@
                         <i class="fas fa-bed"></i> Habitaciones
                     </li>
                     <ul id="menuHabitaciones" class="hidden pl-6 space-y-2">
-                        <a href="{{ route('habitaciones.index') }}" class="hover:text-blue-300 cursor-pointer">Lista de habitaciones</a>
-                        <li class="hover:text-blue-300 cursor-pointer">Disponibles</li>
-                        <li class="hover:text-blue-300 cursor-pointer">Reservadas</li>
+                        <li><a href="{{ route('habitaciones.index') }}" class="hover:text-blue-300">Lista de habitaciones</a></li>
+                        <li><a href="{{ route('habitaciones.disponibles') }}" class="hover:text-blue-300">Disponibles</a></li>
+                        <li><a href="{{ route('habitaciones.reservadas') }}" class="hover:text-blue-300">Reservadas</a></li>
+                        <li><a href="{{ route('habitaciones.ocupadas') }}" class="hover:text-blue-300">Ocupadas</a></li>
+                        <li><a href="{{ route('habitaciones.mantenimiento') }}" class="hover:text-blue-300">Mantenimiento</a></li>
                     </ul>
+
+
 
                     <!-- Reservas -->
                     <li onclick="toggleMenu('menuReservas')" class="cursor-pointer flex items-center gap-2 hover:text-blue-300">

@@ -36,6 +36,7 @@
                 <option value="Disponible" {{ old('estado') == 'Disponible' ? 'selected' : '' }}>Disponible</option>
                 <option value="Ocupada" {{ old('estado') == 'Ocupada' ? 'selected' : '' }}>Ocupada</option>
                 <option value="Mantenimiento" {{ old('estado') == 'Mantenimiento' ? 'selected' : '' }}>Mantenimiento</option>
+                <option value="reservada" {{ old('estado') == 'reservada' ? 'selected' : '' }}>Reservada</option>
             </select>
         </div>
 
