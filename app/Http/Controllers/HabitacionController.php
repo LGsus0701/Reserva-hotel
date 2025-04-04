@@ -31,7 +31,8 @@ class HabitacionController extends Controller
 
         Habitacion::create($request->all());
 
-        return redirect()->route('dashboard')->with('success', 'Habitación creada exitosamente');
+        return redirect()->route('habitaciones.index')->with('success', 'Habitación agregada exitosamente.');
+
     }
 
     public function edit($id)

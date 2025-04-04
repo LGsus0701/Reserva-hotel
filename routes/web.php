@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HabitacionController;
 
@@ -8,7 +9,7 @@ Route::get('/', function () {
 });
 
 //dashboard
-Route::view('/dashboard', 'dashboard')->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 //habitaciones crud
 Route::get('/habitaciones', [HabitacionController::class, 'index'])->name('habitaciones.index');
