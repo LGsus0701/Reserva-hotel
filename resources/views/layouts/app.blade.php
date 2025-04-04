@@ -23,7 +23,8 @@
                 <ul class="space-y-4">
                     <!-- Inicio -->
                     <li class="flex items-center gap-2 hover:text-blue-300 cursor-pointer">
-                        <i class="fas fa-home"></i> <a href="#">Inicio</a>
+                        <i class="fas fa-home"></i> 
+                        <a href="{{ route('dashboard') }}" onclick="redirectToHomeAndCloseMenu()">Inicio</a> <!-- Redirige al inicio y cierra los submenús -->
                     </li>
 
                     <!-- Habitaciones -->
