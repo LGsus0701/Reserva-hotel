@@ -38,7 +38,7 @@
                         <a href="{{ route('habitaciones.edit', $habitacion->id_habitacion) }}" class="bg-yellow-500 text-white px-4 py-2 rounded">Editar</a>
                         
                         <!-- Formulario para eliminar -->
-                        <form action="{{ route('habitaciones.destroy', $habitacion->id_habitacion) }}" method="POST" style="display: inline;">
+                        <form action="{{ route('habitaciones.destroy', $habitacion->id_habitacion) }}" method="POST" class="inline" onsubmit="return confirm('¿Estás seguro de que deseas eliminar esta reserva?')">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded">Eliminar</button>

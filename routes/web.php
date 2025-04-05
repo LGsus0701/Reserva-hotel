@@ -3,6 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HabitacionController;
+use App\Http\Controllers\ReservaController;
 
 Route::get('/', function () {
     return redirect()->route('dashboard');
@@ -22,9 +23,8 @@ Route::delete('/habitaciones/{id_habitacion}', [HabitacionController::class, 'de
 // Rutas por estado
 Route::get('/habitaciones/ocupadas', [HabitacionController::class, 'ocupadas'])->name('habitaciones.ocupadas');
 Route::get('/habitaciones/disponibles', [HabitacionController::class, 'disponibles'])->name('habitaciones.disponibles');
-
 Route::get('/habitaciones/mantenimiento', [HabitacionController::class, 'mantenimiento'])->name('habitaciones.mantenimiento');
-
 Route::get('/habitaciones/reservadas', [HabitacionController::class, 'reservadas'])->name('habitaciones.reservadas');
 
-
+//reservas crud
+Route::resource('reservas', ReservaController::class);

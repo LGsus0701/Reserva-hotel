@@ -46,8 +46,8 @@
                         <i class="fas fa-calendar-check"></i> Reservas
                     </li>
                     <ul id="menuReservas" class="hidden pl-6 space-y-2">
-                        <li class="hover:text-blue-300 cursor-pointer">Nuevas Reservas</li>
-                        <li class="hover:text-blue-300 cursor-pointer">Historial</li>
+                        <li><a href="{{ route('reservas.index') }}" class="hover:text-blue-300 cursor-pointer">Lista Reservas</a></li>
+                        
                     </ul>
 
                     <!-- Clientes -->

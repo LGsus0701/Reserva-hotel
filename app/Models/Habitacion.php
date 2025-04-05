@@ -12,7 +12,7 @@ class Habitacion extends Model
     protected $table = 'habitaciones';
     protected $primaryKey = 'id_habitacion';
     protected $fillable = [
-        //'id_habitacion',
+        'id_habitacion',
         'id_tipo_habitacion',
         'numero_habitacion',
         'descripcion',

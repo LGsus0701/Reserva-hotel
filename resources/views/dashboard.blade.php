@@ -6,7 +6,8 @@
 
 <!-- Imagen decorativa -->
 <div class="mb-6">
-        <img src="https://cache.marriott.com/content/dam/marriott-renditions/CUZMC/cuzmc-exterior-0110-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" 
+    <!-- <img src="https://cache.marriott.com/content/dam/marriott-renditions/CUZMC/cuzmc-exterior-0110-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1336px:*" -->
+        <img src="https://quechuahotelcusco.com/img/hotel/quechua-hotel-cusco-exterior-galeria-3-1960.jpg" 
              alt="Hotel Dashboard" 
              class="w-full h-64 object-cover rounded-lg shadow-md">
     </div>
