@@ -3,7 +3,7 @@
 📌 Descripción
 
 Este es un sistema de Reserva de Hoteles desarrollado con Laravel y PHP, 
-que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera eficiente.
+que permite a los usuarios seleccionar y reservar habitaciones de manera eficiente.
 
  Integrantes
 
@@ -21,9 +21,9 @@ que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera
 
 ✅ Sistema de reservas con calendario interactivo.
 
-✅ Generación de reportes de reservas y ocupación.
+✅ Creacion de servicios adicionales.
 
-✅ Notificaciones de confirmación de reserva por correo.
+
 
 ## Objetivos del Proyecto
 
@@ -35,27 +35,9 @@ que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera
 
 -Facilitar la generación de informes para la toma de decisiones.
 
-## Gestión de Habitaciones
 
--Administración de tipos de habitaciones y su disponibilidad.
 
--Control de ocupación y mantenimiento.
-
-## Reservas
-
--Registro, modificación y cancelación de reservas.
-
--Integración con sistemas de reservas en línea.
-
--Notificación automática de confirmaciones y cambios.
-
-## Gestión de Facturación
-
--Generación de facturas y recibos digitales.
-
--Integración con múltiples métodos de pago (tarjetas, efectivo, pagos en línea).
-
--Control de  descuentos.
+![reserva_hoteles](https://github.com/user-attachments/assets/4dc9190d-845b-4883-8800-b826540cf9d9)
 
 
 
