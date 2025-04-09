@@ -69,6 +69,4 @@ que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera
 
 -Monitoreo y ajustes.
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
