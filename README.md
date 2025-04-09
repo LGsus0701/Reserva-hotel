@@ -55,18 +55,8 @@ que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera
 
 -Integración con múltiples métodos de pago (tarjetas, efectivo, pagos en línea).
 
--Control de impuestos y descuentos.
+-Control de  descuentos.
 
-## Plazos y Cronograma
 
--Análisis y recopilación de requisitos.
-
--Diseño y arquitectura del sistema.
-
--Desarrollo y pruebas.
-
--Implementación y capacitación.
-
--Monitoreo y ajustes.
 
 
