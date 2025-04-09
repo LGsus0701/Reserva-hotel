@@ -24,19 +24,6 @@ que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera
 
 ✅ Notificaciones de confirmación de reserva por correo.
 
-
-🚀 Tecnologías Utilizadas
-
-Framework: Laravel 10
-
-Lenguaje: PHP 8
-
-Base de datos: PostgreSql
-
-Frontend: Blade, Tailwind CSS 
-
-Herramientas: Git, GitHub, Visual Studio Code Sistema de reserva de Hoteles
-
 ## Objetivos del Proyecto
 
 -Desarrollar un sistema integral para la gestión de reservas en hoteles.
