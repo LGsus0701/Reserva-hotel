@@ -5,7 +5,8 @@
 Este es un sistema de Reserva de Hoteles desarrollado con Laravel y PHP, 
 que permite a los usuarios buscar, seleccionar y reservar habitaciones de manera eficiente.
 
-👥 Integrantes
+ Integrantes
+
 👥Jeyvin Jesus Ruiz Tafur
 
 👥Torres Santos Jhonatan Jocselin
