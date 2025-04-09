@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Reserva extends Model
 {
+    use HasFactory;
+
     protected $table = 'reservas';
     protected $primaryKey = 'id_reserva';
     protected $fillable = [
@@ -29,6 +32,11 @@ class Reserva extends Model
     public function habitacion()
     {
         return $this->belongsTo(Habitacion::class, 'id_habitacion');
+    }
+
+    public function reservaServicios()
+    {
+        return $this->hasMany(ReservaServicio::class, 'id_reserva');
     }
 
 }

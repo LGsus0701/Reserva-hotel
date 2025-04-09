@@ -47,7 +47,7 @@
                     </li>
                     <ul id="menuReservas" class="hidden pl-6 space-y-2">
                         <li><a href="{{ route('reservas.index') }}" class="hover:text-blue-300 cursor-pointer">Lista Reservas</a></li>
-                        
+
                     </ul>
 
                     <!-- Clientes -->
@@ -55,8 +55,10 @@
                         <i class="fas fa-users"></i> Clientes
                     </li>
                     <ul id="menuClientes" class="hidden pl-6 space-y-2">
-                        <li class="hover:text-blue-300 cursor-pointer">Lista de Clientes</li>
-                        <li class="hover:text-blue-300 cursor-pointer">Añadir Cliente</li>
+                        <li>
+                            <a href="{{ route('clientes.index') }}" class="hover:text-blue-300 cursor-pointer">Lista de Clientes</a>
+                        </li>
+                        <!-- <li class="hover:text-blue-300 cursor-pointer">Añadir Cliente</li> -->
                     </ul>
 
                     <!-- Pagos -->
@@ -73,8 +75,11 @@
                         <i class="fas fa-user-circle"></i> Usuarios
                     </li>
                     <ul id="menuUsuarios" class="hidden pl-6 space-y-2">
-                        <li class="hover:text-blue-300 cursor-pointer">Lista de Usuarios</li>
-                        <li class="hover:text-blue-300 cursor-pointer">Agregar Usuario</li>
+                        <li>
+                            <a href="{{ route('usuarios.index')}}" class="hover:text-blue-300 cursor-pointer">Lista de Usuarios</a>
+
+                        </li>
+
                     </ul>
 
                     <!-- Empleados -->
@@ -82,8 +87,8 @@
                         <i class="fas fa-id-badge"></i> Empleados
                     </li>
                     <ul id="menuEmpleados" class="hidden pl-6 space-y-2">
-                        <li class="hover:text-blue-300 cursor-pointer">Lista de Empleados</li>
-                        <li class="hover:text-blue-300 cursor-pointer">Agregar Empleado</li>
+                        <li><a href="{{ route('empleados.index') }}" class="hover:text-blue-300 cursor-pointer">Lista de Empleados</a></li>
+
                     </ul>
 
                     <!-- Servicios -->
@@ -91,8 +96,12 @@
                         <i class="fas fa-concierge-bell"></i> Servicios
                     </li>
                     <ul id="menuServicios" class="hidden pl-6 space-y-2">
-                        <li class="hover:text-blue-300 cursor-pointer">Servicios Disponibles</li>
-                        <li class="hover:text-blue-300 cursor-pointer">Agregar Servicio</li>
+                        <li> <a href="{{ route('servicios.index') }}" class="hover:text-blue-300 cursor-pointer">Servicios Disponibles</a></li>
+                        <!-- @if(isset($reserva))
+                        <li><a href="{{ route('reservaservicios.index', ['reservaId' => $reserva->id_reserva]) }}" class="hover:text-blue-300 cursor-pointer">Detalle Servicio</a></li>
+                        @endif -->
+
+
                     </ul>
 
                 </ul>

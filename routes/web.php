@@ -1,9 +1,14 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\EmpleadoController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HabitacionController;
 use App\Http\Controllers\ReservaController;
+use App\Http\Controllers\ReservaServicioController;
+use App\Http\Controllers\ServicioController;
+use App\Http\Controllers\UsuarioController;
 
 Route::get('/', function () {
     return redirect()->route('dashboard');
@@ -28,3 +33,31 @@ Route::get('/habitaciones/reservadas', [HabitacionController::class, 'reservadas
 
 //reservas crud
 Route::resource('reservas', ReservaController::class);
+
+// cliente crud
+
+Route::resource('clientes', ClienteController::class);
+
+// servicios crud
+
+Route::resource('servicios', ServicioController::class);
+
+// empleados crud
+Route::resource('empleados', EmpleadoController::class);
+//usuarios crud
+
+Route::resource('usuarios', UsuarioController::class);
+
+// reservaServicio
+
+Route::prefix('reservas/{reservaId}/servicios')->group(function () {
+    Route::get('/', [ReservaServicioController::class, 'index'])->name('reservaservicio.index');
+    Route::get('/create', [ReservaServicioController::class, 'create'])->name('reservaservicios.create');
+    Route::post('/', [ReservaServicioController::class, 'store'])->name('reservaservicios.store');
+    Route::delete('/{id}', [ReservaServicioController::class, 'destroy'])->name('reservaservicios.destroy');
+});
+
+
+
+
+
